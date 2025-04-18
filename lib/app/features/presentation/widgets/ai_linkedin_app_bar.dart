@@ -67,8 +67,8 @@ class AiLinkedinAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
           Padding(
             padding: EdgeInsets.only(
-              bottom: MediaQuery.of(context).size.width * 0.03,
-              top: MediaQuery.of(context).size.width * 0.008,
+              bottom: MediaQuery.of(context).size.height * 0.012,
+              top: MediaQuery.of(context).size.height * 0.003,
               left: MediaQuery.of(context).size.width * 0.04,
               right: MediaQuery.of(context).size.width * 0.04,
             ),

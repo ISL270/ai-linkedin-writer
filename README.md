@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/icon/icon.png" alt="App Logo" width="150" />
+</div>
+
 # AI Linkedin Writer
 A Flutter web application that helps users write engaging LinkedIn posts using AI.
 
