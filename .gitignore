@@ -50,5 +50,3 @@ lib/firebase_options.dart
 .firebase
 sentry.properties
 lib/app/core/config/sentry_config.dart
-# Local Netlify folder
-.netlify
