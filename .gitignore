@@ -51,6 +51,7 @@ lib/firebase_options.dart
 sentry.properties
 lib/app/core/config/sentry_config.dart
 
-# Ignore project metadata and windsurf rules
+# MISC
 .metadata
 .windsurfrules
+analysis_options.yaml
