@@ -14,9 +14,6 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  // DEV-ONLY: Reset token count on every browser refresh
-  await OpenAIService().resetTokens();
-
   if (kReleaseMode) {
     await SentryFlutter.init((options) {
       options.dsn = sentryDsn;
