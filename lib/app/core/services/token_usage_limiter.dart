@@ -9,20 +9,7 @@ class TokenUsageLimiter {
   final _storage = StorageProvider.instance;
 
   Future<bool> canUseTokens(int estimatedTokens) async {
-    await _initializeIfNeeded();
-    final now = DateTime.now();
-    
-    // Get last reset time
-    final lastResetStr = await _storage.getValue(_keyLastReset) ?? '0';
-    final lastResetTime = DateTime.fromMillisecondsSinceEpoch(int.parse(lastResetStr));
-    
-    // If it's a new day, reset the counter
-    if (now.difference(lastResetTime).inDays > 0) {
-      await _resetCounter(now);
-      return true;
-    }
-    
-    // Check if under limit
+    await _resetIfNewDay();
     final usedTokensStr = await _storage.getValue(_keyDailyTokens) ?? '0';
     final usedTokens = int.parse(usedTokensStr);
     return (usedTokens + estimatedTokens) <= _maxTokensPerDay;
@@ -60,8 +47,19 @@ class TokenUsageLimiter {
     debugPrint('Current token state - Used: $usedTokens, Last Reset: ${DateTime.fromMillisecondsSinceEpoch(int.parse(lastResetTime))}');
   }
 
-  Future<int> getRemainingTokens() async {
+  // Reset the counter if a new day has started
+  Future<void> _resetIfNewDay() async {
     await _initializeIfNeeded();
+    final now = DateTime.now();
+    final lastResetStr = await _storage.getValue(_keyLastReset) ?? '0';
+    final lastResetTime = DateTime.fromMillisecondsSinceEpoch(int.parse(lastResetStr));
+    if (now.difference(lastResetTime).inDays > 0) {
+      await _resetCounter(now);
+    }
+  }
+
+  Future<int> getRemainingTokens() async {
+    await _resetIfNewDay();
     final usedTokensStr = await _storage.getValue(_keyDailyTokens) ?? '0';
     final usedTokens = int.parse(usedTokensStr);
     final remaining = _maxTokensPerDay - usedTokens;
