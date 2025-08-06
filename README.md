@@ -1,9 +1,25 @@
+# AI Linkedin Writer
+
 <div align="center">
-  <img src="assets/icon/icon.png" alt="App Logo" width="150" />
+  <table>
+    <tr>
+      <td>
+        <img src="assets/icon/icon.png" alt="AI LinkedIn Writer Logo" width="150" height="150" style="object-fit: cover;">
+      </td>
+      <td>
+        <div>
+          <img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter">
+          <img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black" alt="Firebase">
+          <img src="https://img.shields.io/badge/OpenAI-GPT--4.1-412991.svg" alt="OpenAI">
+          <img src="https://img.shields.io/badge/Sentry-362D59?logo=sentry&logoColor=white" alt="Sentry">
+          <br><br>
+          <p>An AI-powered LinkedIn post generator built with Flutter Web and OpenAI’s GPT-4.1. This chatbot helps users instantly transform rough thoughts into clear, professional LinkedIn content.</p>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
 
-# AI Linkedin Writer
-A Flutter web application that helps users write engaging LinkedIn posts using AI.
 
 ## Features
 
