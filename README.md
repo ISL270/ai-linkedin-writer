@@ -8,11 +8,11 @@
       </td>
       <td>
         <div>
+          <p>An AI-powered LinkedIn post generator built with Flutter Web and OpenAI’s GPT-5. This chatbot helps users instantly transform rough thoughts into clear, professional LinkedIn content.</p>
           <img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" alt="Flutter">
           <img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black" alt="Firebase">
           <img src="https://img.shields.io/badge/OpenAI-GPT--5-412991.svg" alt="OpenAI">
           <img src="https://img.shields.io/badge/Sentry-362D59?logo=sentry&logoColor=white" alt="Sentry">
-          <p>An AI-powered LinkedIn post generator built with Flutter Web and OpenAI’s GPT-5. This chatbot helps users instantly transform rough thoughts into clear, professional LinkedIn content.</p>
         </div>
       </td>
     </tr>
