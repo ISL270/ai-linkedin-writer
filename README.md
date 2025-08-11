@@ -4,7 +4,7 @@
   <table>
     <tr>
       <td>
-        <img src="assets/icon/icon.png" alt="AI LinkedIn Writer Logo" width="170" height="170" style="object-fit: cover;">
+        <img src="assets/logo.png" alt="AI LinkedIn Writer Logo" width="170" height="170" style="object-fit: cover;">
       </td>
       <td>
         <div>
@@ -19,6 +19,7 @@
   </table>
 </div>
 
+<img src="assets/demo.png" alt="AI Linkedin Writer Demo" style="object-fit: cover;">
 
 ## Features
 
